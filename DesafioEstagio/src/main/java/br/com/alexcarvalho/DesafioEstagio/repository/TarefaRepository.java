@@ -11,6 +11,6 @@ public interface TarefaRepository extends JpaRepository<Tarefa, Long> {
     List<Tarefa> findByResponsavelContainingIgnoreCase(String responsavel);
     List<Tarefa> findByDataEntrega(LocalDate dataEntrega);
     List<Tarefa> findByConcluidaFalse();
-    List<Tarefa> findByConcluidaFalseAndResponsavelContainingIgnoreCase();
+    List<Tarefa> findByConcluidaFalseAndResponsavelContainingIgnoreCase(String responsavel);
 
 }
